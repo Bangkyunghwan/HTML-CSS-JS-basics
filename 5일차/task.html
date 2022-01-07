@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tag{
+            border: 0.5px solid rgb(236, 230, 230); 
+            box-shadow: 2px 2px 2px grey;
+            border-radius: 10px;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-between; */
+            /* perspective: 500px; */
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+
+        }
+        .tag .box{
+            background-color: rgb(245, 194, 66);
+            border-bottom-left-radius: 10px ;
+            border-bottom-right-radius: 10px; 
+            text-align: right;
+            /* box-sizing: border-box; */
+            /* padding: 5px 3px; */
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+              
+        }
+        .example{
+            font-size: 12px;
+            color: rgb(143, 139, 139);
+            text-align: center;
+            
+        }
+        p{
+            margin: 0;
+            font-size: 25px;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            justify-content: space-between;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            
+            
+        }
+
+        .flex-small-container1{
+            display: flex;
+            flex-direction: column;   
+            
+        }
+        .flex-small-container2{
+            display: flex;
+            flex-direction: column;  
+            
+
+        }
+
+        .flex-small-container3{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+
+        .h1-flex-container{
+            display: flex;
+            align-items: center;
+            height: 30%;
+        }
+        .flex-small-container1 > .tag{
+            height: 250px;
+            margin: 15px 0;
+        }
+        .flex-small-container2 > .tag{
+            height: 200px;
+            margin: 15px 0;
+        }
+
+        .flex-small-container3 > .tag{
+            height: 300px;
+            margin: 15px 0;
+
+        }
+
+        h1{
+            margin: 0;
+        }
+        
+        .back{
+            transform: translateY(-100%) rotateY(180deg);
+
+            
+            border: 0.5px solid rgb(236, 230, 230); 
+            box-shadow: 2px 2px 2px grey;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+
+            
+            
+            
+        }
+
+        .back-top{
+            box-sizing: border-box;
+            height: 50%;
+            padding: 10px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        
+
+           
+            
+        }
+
+        .back-bottom{
+            height: 50%;
+            background-color: rgb(245, 194, 66);
+            border-bottom-left-radius: 10px ;
+            border-bottom-right-radius: 10px; 
+            box-sizing: border-box;
+            padding: 10px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .front, .back{  
+            backface-visibility: hidden;
+        }
+
+        .tag:hover{
+            transform: perspective(200px) rotateY(180deg);
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1 style="border-bottom: 1px solid black; padding: 5px 10px;">태그 갤러리</h1>
+    <div class="flex-container">
+        <div class="flex-small-container1">
+            <div class="tag">
+                <div class="front" style="height: 100%;">
+                    <div class="h1-flex-container">
+                        <h1> &lt;a&gt;</pre></h1>
+                    </div>
+                    <div class="box">
+                        <p>Anchor를 삽입합니다.<br>Inline 태그 입니다.</p>
+                        <br><br>
+                        <div class="example">마우스를 올려 예시 보기</div>
+                    </div>
+                </div>
+
+                <div class="back">
+                    <div class="back-top">
+                        <p style="font-size: 20px; color:rgb(197, 193, 193)">예시 1</p>
+                        <p style="text-align: center;"><a href="#">네이버로 이동</a></p>
+                    </div>
+                    <div class="back-bottom">
+                        <p style="font-size: 20px; color:rgb(197, 193, 193);">예시 2</p>
+                        <p style="text-align: center;"><a href="#">구글로 이동</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="tag">
+                <div class="front" style="height: 100%;">
+                    <div class="h1-flex-container">
+                        <h1> &lt;em&gt;</h1>
+                    </div>
+                    <div class="box" style="background-color: rgb(214, 158, 186);" >
+                        <p>텍스트 강조<br>Inline 태그 입니다.</p>
+                        <br><br>
+                        <div class="example">마우스를 올려 예시 보기</div>
+                    </div>
+                </div>
+
+                <div class="back">
+                    <div class="back-top">
+                        <p style="font-size: 20px; color:rgb(197, 193, 193)">예시 1</p>
+                        <p style="text-align: center;"><em>네이버로 이동</em></p>
+                    </div>
+                    <div class="back-bottom">
+                        <p style="font-size: 20px; color:rgb(197, 193, 193);">예시 2</p>
+                        <p style="text-align: center;"><em>구글로 이동</em></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="tag">
+                <div class="h1-flex-container">
+                    <h1>&lt;em&gt;</h1>
+                </div>
+                <div class="box" style="background-color: rgb(179, 230, 179);">
+                    <p>텍스트 강조<br>Inline 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-small-container2">
+            <div class="tag">
+                <div class="h1-flex-container">
+                    <h1> &lt;br&gt;</h1>
+                </div>
+                <div class="box" style="background-color: rgb(247,230,216);">
+                    <p>줄 바꿈 해줌<br>block 태그 입니다.</p>
+                    <br><br>
+                    <div class="ex-flex-container">
+                        <div class="example">마우스를 올려 예시 보기</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tag">
+            <div class="h1-flex-container">
+                <h1> &lt;i&gt;</pre></h1>
+            </div>
+                <div class="box" style="background-color: rgb(219,227,241);">
+                    <p>Italic체로 바꿔줌<br>Inline 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+
+            <div class="tag">
+            <div class="h1-flex-container">
+                <h1> &lt;html&gt;</pre></h1>
+            </div>
+                <div class="box">
+                    <p>루트 태그<br>??? 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+        
+        
+        
+            <div class="tag">
+                <div class="h1-flex-container">
+                    <h1> &lt;h[1-6]&gt;</pre></h1>
+                </div>
+                <div class="box" style="background-color: rgb(214, 158, 186);">
+                    <p>제목 설정 태그<br>block 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-small-container3">
+            <div class="tag">
+            <div class="h1-flex-container">
+                <h1> &lt;p&gt;</pre></h1>
+            </div>
+                <div class="box" style="background-color: rgb(179, 230, 179);">
+                    <p>단락을 설정하는 태그<br>block 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+
+
+            <div class="tag">
+                <div class="h1-flex-container">
+                  <h1> &lt;ol-li&gt;</pre></h1>
+                </div>
+                <div class="box" style="background-color: rgb(247,230,216);">
+                    <p>순서 있는 리스트<br> block 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+
+            <div class="tag">
+                <div class="h1-flex-container">
+                    <h1> &lt;ul-li&gt;</pre></h1>
+                </div>
+                <div class="box" style="background-color: rgb(219,227,241);">
+                    <p>순서 있는 리스트<br> block 태그 입니다.</p>
+                    <br><br>
+                    <div class="example">마우스를 올려 예시 보기</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

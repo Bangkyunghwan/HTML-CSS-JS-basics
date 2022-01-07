@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5,20%);
+        }
+    
+        /* .small_gallery {
+             display: flex;
+            flex-direction: column;
+        }
+        .card {
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px grey;
+            margin-bottom: 30px;
+
+            display: flex;
+            flex-direction: column;
+
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        
+        .card:hover .card {
+            transform: rotateY(180deg);
+        }
+
+        .front {
+            
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .example {
+
+        }
+
+        .example {
+            
+        }
+        #grid2 {
+            grid-column-start: 2;
+        }
+        #grid3 {
+            grid-column-start: 3;
+        }
+        #grid4 {
+            grid-column-start: 4;
+        } */
+        
+        
+    </style> -->
+
+</head>
+
+<body>
+    <header>
+        <h1>Tag Gallery</h1>
+        <hr>
+    </header>
+
+    <div class="gallery">
+        <div class="small_gallery" id="grid2">
+            <div class="card" style="border: 1px solid black;">
+                <div class="front">
+                    <p>anchor</p>
+                    <div class="tag_name">
+                        anchor
+                    </div>
+    
+                    <div class="description">
+                        anchor is href
+                    </div>
+                </div>
+            
+                <div class="back">
+                    <div class="example1">
+
+                    </div>
+    
+                    <div class="example2">
+    
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="small_gallery" id="grid3">
+
+        </div>
+
+        <div class="small_gallery" id="grid4">
+
+        </div>
+    </div>
+</body>
+
+</html>

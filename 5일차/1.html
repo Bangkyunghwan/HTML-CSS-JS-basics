@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tag{
+            border: 0.5px solid rgb(236, 230, 230); 
+            box-shadow: 2px 2px 2px grey;
+            border-radius: 20px;
+            
+        }
+        .tag .box{
+            background-color: rgb(245, 194, 66);
+            /* padding: 5px 10px; */
+            border-bottom-left-radius: 20px ;
+            border-bottom-right-radius: 20px; ;
+            text-align: right;
+            height: 80%;
+            /* position: absolute; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            
+        }
+        .example{
+            font-size: 12px;
+            color: rgb(143, 139, 139);
+            text-align: center;
+        }
+        p{
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns:  auto auto auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            
+        }
+
+        .flex-container{
+            display: flex;
+            align-items: center;
+            height: 20%;
+        }
+      
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;a&gt;</pre></h1>
+            </div>
+            <div class="box">
+                <p>Anchor를 삽입합니다.<br>Inline 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;em&gt;</h1>
+            </div>
+            <div class="box" style="background-color: rgb(214, 158, 186); " >
+                <p>텍스트 강조<br>Inline 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;em&gt;</h1>
+            </div>
+            <div class="box" style="background-color: rgb(179, 230, 179);">
+                <p>텍스트 강조<br>Inline 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+    
+
+    
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;br&gt;</h1>
+            </div>
+            <div class="box" style="background-color: rgb(247,230,216);">
+                <p>줄 바꿈 해줌<br>block 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+        <div class="tag" style="grid-row: 2 / 4;">
+            <div class="flex-container">
+                <h1> &lt;i&gt;</pre></h1>
+            </div>
+            <div class="box" style="background-color: rgb(219,227,241);">
+                <p>Italic체로 바꿔줌<br>Inline 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;html&gt;</pre></h1>
+            </div>
+            <div class="box">
+                <p>루트 태그<br>??? 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;h[1-6]&gt;</pre></h1>
+            </div>
+            <div class="box" style="background-color: rgb(214, 158, 186);">
+                <p>제목 설정 태그<br>block 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+
+        <div class="tag">
+            <div class="flex-container">
+                <h1> &lt;p&gt;</pre></h1>
+            </div>
+            <div class="box" style="background-color: rgb(179, 230, 179);">
+                <p>단락을 설정하는 태그<br>block 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+
+        <div class="tag" >
+            <div class="flex-container">
+                <h1> &lt;ol-li&gt;</pre></h1>
+            </div>
+            <div class="box" style="background-color: rgb(247,230,216);">
+                <p>순서 있는 리스트<br> block 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+
+        <div class="tag" style="grid-row: 3 / 5">
+            <div class="flex-container">
+                <h1> &lt;ul-li&gt;</pre></h1>
+            </div>
+            <div class="box" style="background-color: rgb(219,227,241);">
+                <p>순서 있는 리스트<br> block 태그 입니다.</p>
+                <br><br>
+                <div class="example">마우스를 올려 예시 보기</div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

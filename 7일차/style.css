@@ -1,0 +1,355 @@
+
+body{
+    margin: 0;
+    background-color: #262626;
+}
+
+.icon-logo-star{
+    fill: #fff;
+}
+
+nav{
+    /* width: 100%; */
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 0 3%;
+    margin-bottom: 4vh;
+}
+
+.logo-head-list{
+    display: flex;
+    /* box-sizing: border-box; */
+}
+
+.logo-head{
+    display: flex;
+    align-items: center;
+    margin-right: 3% 
+}
+
+.logo-head h1{
+    margin: 0;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.logo-head-list li{
+    font-weight: bolder;
+    /* font-size: 50%; */
+    font-size: 13px;
+    padding: 2% 7%;
+}
+
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.option-images{
+   position: fixed;
+   top: 10px;
+   right: 3%;
+}
+
+
+main{
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2.5vw;
+}
+
+article .image-section{
+    height: 470px;
+    background-image: 
+    linear-gradient( to right, rgba(255,255,255,0.0), rgba(255,255,255,1)),
+    url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2022/01/fingerprint-gradient.jpg?resize=1000%2C500&ssl=1");
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: content-box;
+    
+}
+
+.image-section .contents-in-image{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 3vw;
+}
+
+.contents-in-image h2{
+    margin: 0;
+    font-size: 48px;
+    
+}
+
+.SECURITY{
+    color: #ff7a18;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.contents-in-image p{
+    font-size: 20px;
+    line-height: 180%;
+}
+
+.contents-in-image .Chris{
+    display: flex;
+    align-items: center;
+}
+
+.Chris img{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.intro-section .intro-box{
+    width: 250px;
+    height: 406px;
+    box-sizing: border-box;
+    background-color: black;
+    width: 260px;  
+    color: white; 
+    position: relative;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%) 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+
+.intro-box h2{
+    font-size: 30px;
+    margin-bottom: 0;
+    
+    /* line-height: 130%; */
+}
+
+.intro-box p{
+    line-height: 200%;
+}
+
+.intro-people .intro-person{
+    box-sizing: border-box;
+    width: 270px;
+    height: 320px;
+    padding: 26px;
+    background: linear-gradient(85deg,#434343,#262626);
+    border-radius: 14px;
+    
+
+}
+
+.intro-person-css{
+    font-size: 0.66rem;
+    color: #ff7a18;
+}
+
+.intro-person h3{
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.person-info{
+    display: flex;
+    align-items: center;
+}
+
+.person-info > div{
+    margin-left: 8px;
+}
+
+
+.article-date{
+    color: #a09e9e;
+    
+}
+
+.intro-person strong{
+    color: #d4d4d4;
+}
+
+.intro-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.css-container .intro-person-css{
+    display: flex;
+    font-size: 0.66rem;
+}
+
+.intro-person-css div{
+    font-weight: bolder;
+    margin-right: 10px;
+}
+    
+
+
+
+.person-info > img{
+    border-radius: 50%;
+}
+
+.intro-section{
+   display: flex;
+    margin: 5vh 0;
+
+}
+
+.intro-people{
+    display: flex;   
+}
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card{
+    height: 720px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.card h3{
+    font-size: 2rem;
+}
+
+.card-contents-container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+}
+
+.card-contents-container > div {
+    margin-top: 10%
+}
+
+.card-contents-container p{
+    line-height: 170%;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1480px) {
+    .image-section .contents-in-image{
+        transform: scale(0.9);
+        padding-top: 0;
+        justify-content: center;
+        
+    }
+    .contents-in-image h2{
+        line-height: 100%;
+    }
+
+    .contents-in-image p{
+        line-height: 150%;
+        margin-top: 30px;
+    }   
+}
+
+
+@media screen and (max-width: 950px){
+    article .image-section{
+        background-size: 100% 35%;
+    }
+
+    .image-section .contents-in-image {
+        width: 100%;
+        height: 60%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;
+        position: absolute;
+        left: 1%;
+        top: 7%;
+    }
+    .logo-head-list{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-head-list li{
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        }
+
+    .logo-head{
+        padding-top: 1vh;           
+    }
+
+    .logo-head h1{
+        font-size: 1.2rem;
+    }
+
+    .logo-head .icon-logo-star{
+        width: 15px;
+        height: 15px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .card-section{
+
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card h3{
+        font-size: 1.5rem;
+    }
+
+    .card-contents-container > div {
+        margin-top: 10%
+    }
+
+    .card-contents-container p{
+        line-height: 140%;
+    }
+    .image-section .contents-in-image {
+        transform: scale(0.8);
+    }
+
+    .contents-in-image h2{
+        font-size: 36px;
+    }
+}
+
+

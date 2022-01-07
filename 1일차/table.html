@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tab</title>
+        <style>
+            th:hover, td:hover{
+                background-color: cornsilk;
+            }
+            th, td{
+                border:2px solid black;
+                /* border-collapse: collapse; */
+                
+                border-radius: 10px;
+            }
+            tr:nth-child(odd){
+                background-color: blanchedalmond;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <table style="width:100%">
+            <caption style="font-size: 50px; font-family: 'Courier New', Courier, monospace;"><b>Tag table</b></caption>
+            <tr>
+              <th>태그</th>
+              <th>설명</th>
+              <th>예시1</th>
+              <th>예시2</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>링크를 생성함</td>
+                <td><a href="https://naver.com" >Go to naver</a></td>
+                <td><a href="https://daum.net" target="_blank">Go to daum</a></td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>볼드체로 만듬</td>
+                <td><b>Hello</b></td>
+                <td><b>World</b></td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td>기울어진 글씨(italic)</td>
+                <td><i>Hello</i></td>
+                <td><i>World</i></td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>텍스트 강조(기울어진 글씨)</td>
+                <td><em>Hello</em></td>
+                <td><em>World</em></td>
+            </tr>
+            <tr>
+                <td>strong</td>
+                <td>텍스트 강조(볼드체)</td>
+                <td><strong>Hello</strong></td>
+                <td><strong>World</strong></td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>이미지를 삽입함</td>
+                <td><img src="programming.jpg" style="width: 160px; height: 160px;"></td>
+                <td><img src="smile.jpg"></td>
+            </tr>
+            <tr>
+                <td>span</td>
+                <td>인라인 태그(아무런 기능이 없음)</td>
+                <td><span>Hello</span></td>
+                <td><span>World</span></td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>단락을 구별하는 태그</td>
+                <td><p>Hello</p></td>
+                <td><p>World</p></td>
+            </tr>
+            <tr>
+                <td>ul+li</td>
+                <td>순서를 나타내지 않는 목록</td>
+                <td>
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>cat</li>
+                        <li>dog</li>
+                        <li>lion</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>ol+li</td>
+                <td>순서를 나타내는 목록</td>
+                <td>
+                    <ol>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>cat</li>
+                        <li>dog</li>
+                        <li>lion</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>h[1-6]</td>
+                <td>제목 중요한 순서대로 1~6(크기가 달라짐)</td>
+                <td><h1>Hello World</h1></td>
+                <td><h6>Hello World</h6></td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>줄바꿈 해주는 태그(엔터키 효과)</td>
+                <td>Hello<br>World</td>
+                <td>Good<br>Game</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td>버튼 만들어줌</td>
+                <td><button>Hello</button></td>
+                <td><button>World</button></td>
+            </tr>
+            <tr>
+                <td>select+option</td>
+                <td>몇개의 선택지를 주고 하나를 선택하게 함</td>
+                <td>
+                    <select id="foods" name="foods">
+                        <option value="rice">Rice</option>
+                        <option value="cake">Cake</option>
+                        <option value="meat">Meat</option>
+                        <option value="milk">Milk</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="cars" name="cars">
+                        <option value="benz">Benz</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">Bwm</option>
+                        <option value="kia">Kia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+                <td>텍스트를 쓸 수 있는 공간을 만듬</td>
+                <td>
+                    <textarea id="diary" name="diary" rows="5" cols="10">Hello</textarea>
+                </td>
+                <td>
+                    <textarea id="intro" name="intro" rows="10" cols="15">Hello world</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>input+label</td>
+                <td>입력을 받음</td>
+                <td>
+                    <input type="color" id="colors" name="colors">
+                </td>
+                <td>
+                    <input type="checkbox" id="food1" name="food1" value="rice">
+                    <label for="food1">Rice</label><br>
+                    <input type="checkbox" id="food2" name="food2" value="milk">
+                    <label for="food2">Milk</label><br>
+                    <input type="checkbox" id="food3" name="food3" value="meat">
+                    <label for="food3">Meat</label><br>
+                </td>
+            </tr>
+          </table>
+    </body>
+</html>

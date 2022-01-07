@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="nvidia.ico">
+    <style>
+        
+        body{
+            margin: 0;
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #eee;
+        }
+        header{
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+
+        nav{
+            display: grid;
+            grid-template-columns: 1fr 20px repeat(12, 100px) 1fr;
+            border-bottom: 1px solid #f7f7f7;
+            background-color: white;
+            
+        }
+        
+        nav ul{
+          list-style-type: none; 
+        }
+
+        .logo-name{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-name h1{
+            font-size: 20px;
+            padding-left: 3px;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .options{
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            justify-content: space-between;
+            
+
+        }
+
+        .options img{
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .logo-name img{
+            width: 30px;
+            height: 30px;
+        }
+
+        .nav-container{           
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 8px 0;
+            padding: 0;
+            grid-column: 4 / 7;
+            font-size: 15px;      
+        }
+
+        .nav-container2{
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 8px 0;
+            padding: 0;
+            grid-column: 12 / 14;     
+        }
+
+        .black-background{            
+            height: 500px;
+            background-color: black;
+            animation-name: appear1;
+           animation-duration: 1.5s;
+        }
+        .image-section{
+            display: grid;
+            grid-template-columns: 1fr 1220px 1fr;
+            align-items: center;      
+        }
+        .image-section img{
+            width: 100%;
+            height: 580px;
+        }
+
+       .background-image-section{
+           height: 500px;
+           grid-column: 2 / 4;
+           grid-row-start: 1;
+           background-image: url("geforce.jpg");
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           animation-name: appear1;
+           animation-duration: 1.5s;
+       }
+
+       @keyframes appear1 {
+            from{opacity: 0;}
+            to{opacity: 1;}           
+       }
+
+       .contents-in-image{
+           grid-column: 2 / 3;
+           grid-row-start: 1 ;
+           animation-name: apear2;
+            animation-duration: 3s;      
+       }
+
+
+       @keyframes apear2 {
+           0% {opacity: 0;}
+           50% {opacity: 0;}
+           100%{opacity: 1;}
+       }
+
+        .text-in-image{
+            font-size: 60px;
+            font-weight: 100;
+            color: #76b900;
+            margin-bottom: 0;
+        } 
+
+        .button{
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            background-color: #76b900;
+            display: inline-block;
+            padding: 10px 13px;
+        }
+
+        .contents-in-image p{
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .button:hover{
+            background-color: #63f502;
+        }
+
+        
+        
+        .gallery h2{
+            font-size: 40px;
+            text-align: center; 
+            color: #76b900;
+            font-weight: 100;
+            margin-bottom: 20px;
+        }
+
+        .gallery-item{
+            width: 295px;
+            height: 291px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            background-color: white;
+            margin: 8px 15px 13px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            
+
+        }
+
+
+        .gallery-item img{
+            height: 60%;
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .gallery-item:hover{
+            box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .gallery-item h3{
+            color: #76b900;
+            font-size: 16px;
+            font-weight: 100;
+            padding: 17px 15px;
+            margin: 0;
+        }
+
+        .gallery-item p{
+            padding: 0 15px;
+            margin: 0;
+            font-size: 13px;
+            line-height: 150%;
+        }
+
+        .gallery-line{
+            display: flex;
+            justify-content: center;  
+        }
+        
+        .news-gallery .gallery-item{
+            height: 377px;
+        }
+        .news-gallery img{
+            height: 50%;
+        }
+
+        .footer1{
+            width: 100%;
+            height: 467px;
+            background-color: black;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 412px 412px 412px 1fr;
+            justify-content: center;
+        }
+
+        .footer1 h3{
+            font-size: 23px;
+            font-weight: 700;
+            color: white;
+            border-bottom: 1px solid #747474;
+            padding-bottom: 12px;
+            margin-top: 50px;
+            margin-bottom: 0;
+            
+        }
+
+        .footer1 ul{
+            color: #76b900;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;  
+        }
+
+        .footer1 li{
+            margin: 20px 0;
+            font-size: 15px;
+        }
+        
+        .footer-list-1{
+            grid-column: 2/3;
+            padding-right: 30px;
+        }
+
+        .footer-list-2{
+            padding: 0px 15px;   
+        }
+
+        .footer-list-3{
+            padding-left: 30px;
+        }
+
+
+
+        .footer2{
+            height: 82px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            padding-bottom: 80px;
+        }
+
+        .footer2 > p{
+            color: white;
+        }
+
+        .footer2  .subscribe-box{
+            font-weight: 300;
+            box-sizing: border-box;
+            width: 94px;
+            height: 41px;
+            background-color: #76b900;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer2 p{
+            color: #747474;
+        }
+
+        .footer2 img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .footer2 .subscribe{
+            display: flex;
+            align-items: center;
+            width: 500px;
+            justify-content: space-evenly;
+            
+
+        }
+        .footer2 .subscribe img{
+            height: 36px;
+            width: 48px;
+        }
+
+        .footer2 .subscribe div:hover{  
+            background-color: #63f502;
+        }   
+
+        .subscribe p{
+            font-size: 26px;
+        }
+
+        .footer2 .logo-list{
+            display: flex;
+            align-items: center;   
+             
+        } 
+        
+        .logo-list img{
+            margin-left: 10px;
+        }
+
+        .footer3{
+            height: 150px;
+        }
+
+        .footer3 ul{
+            list-style: none;
+            display: flex; 
+            margin: 10px;  
+            color: #666;
+            padding: 0;
+            margin-left: 0;
+        }
+
+
+        .footer3 ul li:not(li:last-child){
+            border-right: 1px solid #666;
+
+        }
+
+        .footer3 ul li{
+            padding: 0 10px;
+        }
+        
+        .footer3 ul li:first-child{
+            padding-left: 0;
+        }
+       
+        .copyright{
+            font-size: 10px;
+        }
+
+        .footer3-flex-container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 600px 300px 300px 1fr;
+        }
+
+        .footer3-small-flex-container{
+            grid-column: 2/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer3 .kr-korea{
+            grid-column: 4/5;
+            font-weight: bolder;
+            font-size: 15px;
+            color: #747474;
+            display: grid;
+            padding-top: 40px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div></div>
+            <div class="logo-name">
+                <img src="nvidia.png" alt="nvidia logo">
+                <h1>NVIDIA.</h1>
+            </div>
+
+            <ul class="nav-container">
+                <li>제품</li>
+                <li>솔루션</li>
+                <li>업계</li>
+                <li>사용자</li>
+            </ul>
+
+            <ul class="nav-container2">
+                <li>드라이버</li>
+                <li>지원</li>
+            </ul>
+
+            <ul class="options">
+                <li><img src="magnifier.png" alt="magnifier"></li>
+                <li><img src="user.png" alt="user"></li>
+            </ul>           
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="image-section">
+                <div class="black-background"></div>
+                <div class="background-image-section"></div>
+                <div class="contents-in-image">
+                    <h2 class="text-in-image">CES에서의 NVIDIA 스<br>페셜 이벤트</h2>
+                    <p>2022년 1월 5일 | 1 AM KST</p>
+                    <div class="button">날짜 저장하기</div>
+                </div>
+                    <div></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="gallery">
+
+            <h2>온라인샵</h2>
+            <div class="gallery-line">
+                <div class="gallery-item">
+                    <img src="notebook.jpg" alt="notebook">
+                    <h3>The Ultiamte Play</h3>
+                    <p>GeForce RTX 30 시리즈 노트북</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="speaker.jpg" alt="GPU">
+                    <h3>The Ultiamte Play</h3>
+                    <p>GeForce RTX 30 시리즈</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="deeplearning.jpg" alt="Deeplearning-institute">
+                    <h3>NVIDIA DEEP LEARNING<br>INSTITUTE</h3>
+                    <p>오늘날 가장 복잡한 문제들을 해결할 수 있는 딥 러닝 핸즈온 교육을 들으세요.</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="studio.jpg" alt="Studio">
+                    <h3>이 달의 Studio 소식</h3>
+                    <p>Studio 노트북과 함께 항의성을 마음껏 발휘하세요.</p>
+                </div>
+            </div>
+
+
+            <h2>GAMING</h2>
+            <div class="gallery-line">
+                <div class="gallery-item">
+                    <img src="galaxy.jpg" alt="guardians of the galaxy">
+                    <h3>SAVE THE Universe</h3>
+                    <p>GeForce RTX 30 시리즈를 구입하고 마블 가디언즈 오브 갤럭시를 받아가세요*</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="rainboxsix.jpg" alt="Rainboxsix">
+                    <h3>RTX It's On.</h3>
+                    <p>NVIDIA DLSS coming soon</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="games.jpg" alt="Games">
+                    <h3>NVIDIA Reflex</h3>
+                    <p>밀리초 단위로 측정된 승리</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="game.jpg" alt="Game">
+                    <h3>NVIDIA DLSS</h3>
+                    <p>최대 FPS. 최고 품질.AI 기반</p>
+                </div>
+            </div>
+
+            <div class="news-gallery">
+                <h2>최신 뉴스</h2>
+                <div class="gallery-line">
+                    <div class="gallery-item">
+                        <img src="AI.jpg" alt="AI">
+                        <h3>클라우드 서비스, OEM 파트너, NVIDIA AI를 활용하여 AI 훈련 기준을 높이다.</h3>
+                        <p>MLPerf벤치마크에 대한 첫번째 CSP 사례 제출에서 Microsoft Azure는
+                            NVIDIA OEM 파트너 Dell technologies, Inspur 및 Supermicro와 함께
+                            최신 MLperf Training 1.1 라운드에서 AI 모델 훈련 부문 신기록을 세웠습니다.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="computing.jpg" alt="computing">
+                        <h3>물리학에서 인공지능에 이르는 모든 것을 가르치는 새로운 프레임워크</h3>
+                        <p>NVIDIA Modulus는 디지털 트윈 또는 분석 워크플로우에 사용할 수 있는
+                            물리 기반 머신러닝 모델을 개발하기 위한 멀티 피직스 프레임워크 입니다.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="library.jpg" alt="library">
+                        <h3>NVIDIA, 65개의 신규 및 업데이트된 엑셀러레이트 컴퓨팅 라이브러리 발표</h3>
+                        <p>NVIDIA는 양자 컴퓨팅ㅇ르 가속화하고, 라스트마일 배송을 최적화하며,
+                            슈퍼컴퓨팅을 PyData 생태계에 도입하기 위해 신규 및 업데이트된 SDK를 도입했습니다.
+                        </p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="googlecloud.jpg" alt="nvidia and google cloud">
+                        <h3>NVIDIA와 Google이 개발자가 AI를 더 빨리 구축할 수 있도록 지원합니다</h3>
+                        <p>NVIDIA NGC 카탈로그는 곧 Vertex AI에서 Jupyter notebook을 실행할 수 있는
+                            원클릭 배치 방식을 제공할 예정입니다. 구글 클라우드와의 제휴를 통해 테이터 사이언티스트는
+                            AI개발에 집중할 수 있을 것입니다.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="gallery-line">
+                    <div class="gallery-item">
+                        <img src="lockheed.jpg" alt="forest fires">
+                        <h3>NVIDIA, Lockheed Martin은 주, 연방 산림청과 협력하여 AI로 산불 진화</h3>
+                        <p>NVIDIA, Lockheed 시스템과 Omniverse로 불꽃을 시뮬레이션하고 진입할 수 있는
+                            새로운 실리콘 밸리 랩
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="jensen.jpg" alt="jensen Hwang">
+                        <h3>GTC 총절리</h3>
+                        <p>NVIDIA 젠슨 황 CEO는 GTC 키노트를 통해 가속 컴퓨팅, 데이터센터
+                            아키텍처, AI, 로보틱스, Omiverse 아바타 그리고 디지털 트윈 등에
+                            대한 비전을 밝혔습니다.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="voice.jpg" alt="voice">
+                        <h3>NVIDIA AI 음성 혁신을 통해 기업이 브랜드에 대해 고유한 목소리를
+                            낼 수 있게 되었습니다
+                        </h3>
+                        <p>NVIDIA Riva Custom Voice를 사용하면 모든 기업이 30분 분량의
+                            오디오 데이터만으로 자사 브랜드 및 가상 비서를 위한 고유한
+                        음성을 만들 수 있습니다 </p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="quantum.jpg" alt="Quantum-2">
+                        <h3>NVIDIA Quantum-2 InfiniBand 발표</h3>
+                        <p>슈퍼컴퓨팅을 새로운 차원의 클라우드 환경으로 전환</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer1">
+            <div class="footer-list-1">
+                <h3>기업 정보</h3>
+                <ul> 
+                    <li>NVIDIA 소개</li>
+                    <li>기업 개요</li>
+                    <li>기술</li>
+                    <li>NVIDIA Research</li>
+                    <li>투자 정보</li>
+                    <li>사회적 책임</li>
+                    <li>NVIDIA Foundation</li>
+                </ul>
+            </div>
+
+            <div class="footer-list-2">
+                <h3>참여 프로그램</h3>
+                <ul> 
+                    <li>채용 정보</li>
+                    <li>개발자 홈</li>
+                    <li>개발자 프로그램 가입하기</li>
+                    <li>NVIDIA 파트너 네트워크</li>
+                    <li>NVIDIA Iception</li>
+                    <li>기술 교육</li>
+                    <li> IT 전문가를 위한 교육</li>
+                    <li>데이터 사이언티스트를 위한 전문 서비스</li>
+                </ul>
+            </div>
+
+
+            <div class="footer-list-3">
+                <h3>뉴스 & 이벤트</h3>
+                <ul> 
+                    <li>뉴스룸</li>
+                    <li>NVIDIA 블로그</li>
+                    <li>웨비나</li>
+                    <li>뉴스레터 구독 설정</li>
+                    <li>이벤트 캘린더</li>
+                    <li>NVIDIA GTC</li>
+                    <li>NVIDIA On-Demand</li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="footer2">
+            <div class="subscribe">
+                <img src=data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAkCAMAAAD4m0k4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABnlBMVEWHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgCHwgAAAADqIFB3AAAAiHRSTlMAPqKqqKucL9zD8v383e77xqnO2fBFYfRSbfUDDgIPDF6QUA0SWJMIQI4qAQQznT8XHW7k6DEKadYFCUq3z1kGMqPt6XokK4fz55glwVQLX828VR6L4PeUNT2h/td9FUmv+tIWdtukcdCsTmU0md9/iY8HWr60TYLl2kOt+DoaE0djybDCPJ8umjQepgAAAAFiS0dEiRxhJswAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfgChgTJSW4Gs96AAABYklEQVQ4y2NgZGJmIRqwsrEzcHSQBDgZuDo6uHmIBNwdHbwMfB38AoKsRAEWIZ4OYaAGEVEGIoGYOFgDlwSxGiSlKNAgLYNXqaycLKoGeQVFJWXc6lVU1STUUTRodHTwaGppY1euo6vX0SGii6JBXwQYKcJiBtjUGxoZAyVNTFE0mJlbgOJRUN8SXbmVtQ1IxtbOHi2UHBydgOLOLq6o6t3cPYDCnl7eWIJVTABklI+vH5Jn/QOAQvyBQdjjITgkFCgdFh4BUx8ZFQ0UiImNwxlx8QmJQBVJ5slg/SmpQI5UWiS+mFZJzwC5KxOYvLLAnhXItiKQNHJyQb7Myy9wBoVBoRbhtFRUXALLLaVlqFGJK/F5l1eAlFemBONJfKigqpq/hqkWQxhP8q5T9a1nIEUDdjCqYVBpEGkgVkMjRAN/E2szUYA5A1QYg4t7bqIATzSouE8lrUJpYWhtI6XKym0HAEPUyge2kF93AAAAAElFTkSuQmCC>
+                <p style="color: white">NVIDIA 뉴스레터 구독</p>
+                <div class="subscribe-box">구독하기</div>
+            </div>
+            <div class="logo-list">
+                <p>데이터센터 팔로우하기</p>
+                <img src="facebook.png" alt="facebook logo">                 
+                <img src="twitter.png" alt="twitter logo">
+                <img src="linkedin.png" alt="linked-in logo">
+                <img src="youtube.png" alt="youtube logo">
+            </div>
+        </div>
+
+        <div class="footer3">
+            <div class="footer3-flex-container">
+                <div class="footer3-small-flex-container">
+                    <svg class="global-footer__logo" style="width: 100px; height: 50px;" viewBox="0 407.8 1000 184.4" enable-background="new 0 407.8 1000 184.4" xml:space="preserve">
+                        <title>NVIDIA</title>
+                        <g id="nvidia-logo">
+                            <path d="M987.1 555.7v-2.8h1.7c0.9 0 2.3 0.1 2.3 1.2 0 1.2-0.7 1.5-1.8 1.5H987.1M987.1 557.6h1.2l2.8 4.8h3l-3.1-5c1.5-0.1 2.9-0.8 2.9-3 0-2.7-1.8-3.5-4.9-3.5h-4.4v11.5h2.6L987.1 557.6M1000 556.7c0-6.8-5.2-10.7-11.1-10.7 -5.8 0-11.1 3.9-11.1 10.7 0 6.8 5.2 10.7 11.1 10.7S1000 563.5 1000 556.7M996.8 556.7c0 4.9-3.6 8.2-7.9 8.2l0 0c-4.4 0-7.9-3.3-7.9-8.2 0-4.9 3.6-8.2 7.9-8.2C993.2 548.6 996.8 551.9 996.8 556.7z"></path>
+                            <path d="M593.2 442.7v121.1h34.2V442.7H593.2zM324.4 442.5v121.2h34.5v-94.1l26.9 0.1c8.8 0 15 2.2 19.2 6.7 5.4 5.7 7.6 15.1 7.6 32v55.3H446v-66.9c0-47.8-30.5-54.3-60.2-54.3C385.8 442.5 324.4 442.5 324.4 442.5zM648.3 442.7v121.1h55.4c29.5 0 39.2-4.9 49.6-15.9 7.4-7.7 12.1-24.7 12.1-43.3 0-17-4-32.2-11.1-41.7 -12.5-16.9-30.8-20.2-58.1-20.2H648.3zM682.2 469h14.7c21.3 0 35.1 9.5 35.1 34.4 0 24.8-13.7 34.4-35.1 34.4h-14.7V469zM544 442.7l-28.5 95.9 -27.3-95.9h-36.9l39 121.1h49.2l39.3-121.1H544zM781.4 563.7h34.2v-121h-34.2V563.7zM877.2 442.7l-47.7 121h33.7l7.6-21.3h56.5l7.2 21.3h36.6l-48.2-121H877.2zM899.4 464.8l20.7 56.6H878L899.4 464.8z"></path>
+                            <path d="M103.9 462.8v-16.6c1.6-0.1 3.3-0.2 4.9-0.2 45.6-1.4 75.4 39.1 75.4 39.1s-32.2 44.8-66.8 44.8c-5 0-9.4-0.8-13.4-2.2v-50.5c17.7 2.2 21.3 10 32 27.7l23.7-20c0 0-17.3-22.7-46.5-22.7C110 462.3 106.9 462.5 103.9 462.8M103.9 407.8v24.8c1.6-0.1 3.3-0.2 4.9-0.3 63.3-2.2 104.6 51.9 104.6 51.9s-47.4 57.7-96.7 57.7c-4.5 0-8.7-0.4-12.7-1.1v15.4c3.4 0.4 7 0.7 10.6 0.7 46 0 79.2-23.5 111.4-51.2 5.3 4.3 27.2 14.7 31.7 19.2 -30.6 25.6-101.9 46.3-142.3 46.3 -3.9 0-7.6-0.2-11.3-0.6v21.6h174.7V407.8H103.9zM103.9 527.8v13.1c-42.5-7.6-54.3-51.8-54.3-51.8s20.4-22.6 54.3-26.3v14.4c0 0 0 0-0.1 0 -17.7-2.2-31.7 14.5-31.7 14.5S80 519.6 103.9 527.8M28.4 487.2c0 0 25.2-37.1 75.5-41v-13.5C48.2 437.2 0 484.4 0 484.4s27.3 79 103.9 86.3v-14.4C47.7 549.2 28.4 487.2 28.4 487.2z"></path>
+                        </g>
+                    </svg>
+                    <ul>
+                    <li>Privacy Policy</li>
+                    <li>Legal Info</li>
+                    <li>Accessibility</li>
+                    <li>제품 보안</li>
+                    <li>Contact</li> 
+                    </ul>
+                    <div class="copyright">Copyright © 2021 NVIDIA Corporation</div>
+                </div>
+                <div class="kr-korea">KR-Korea</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
