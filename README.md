@@ -4,7 +4,7 @@ HTML, CSS, JavaScript의 핵심 기초 문법을 학습하고, 간단한 웹페�
 
 <br>
 
-<p align="center">
+<p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   &nbsp;
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
@@ -22,6 +22,6 @@ HTML, CSS, JavaScript의 핵심 기초 문법을 학습하고, 간단한 웹페�
 
 <br>
 
-## 🚀 클론 코딩 연습
+## 🚀 클론 코딩
 
 학습한 내용을 바탕으로 간단한 웹사이트의 UI 클론 코딩 (엔비디아 웹 페이지)
